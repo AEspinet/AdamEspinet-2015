@@ -51,14 +51,17 @@ table {
 /*# sourceMappingURL=reset.css.map */
 
 html {
+  width: 1855px;
+  height: 4148px;
+  margin: 27px 24px 27px 24px; }
+
+body {
   width: 100%;
-  height: 4173px;
-  width: 1903px; }
+  height: 100%; }
 
 #main-wrap {
-  height: 4173px;
-  width: 1903px;
-  display: none; }
+  width: 100%;
+  height: 100%; }
 
 #wrap-top {
   height: 1839px; }
@@ -70,7 +73,7 @@ html {
   #wrap-top #home {
     height: 1053px;
     background-image: url("../img/BackgroundAbstract-70.jpg");
-    background-position: 0 27px;
+    background-position: 0 0;
     background-repeat: no-repeat;
     position: relative;
     z-index: -5; }
@@ -139,12 +142,14 @@ html {
   #portfolio .img-wrap {
     width: 601.3px;
     height: 396px;
-    margin: 0 0 25px 25px;
+    margin: 0 24px 24px 0;
     float: left;
     overflow: hidden;
     display: inline-block; }
     #portfolio .img-wrap:nth-child(-n+3) figure figcaption {
       background-color: #1c94d9; }
+    #portfolio .img-wrap:nth-child(3n) {
+      margin: 0 0 25px 0; }
     #portfolio .img-wrap figure {
       margin: 0;
       position: relative; }
@@ -176,14 +181,16 @@ html {
       -webkit-transition: all 0.3s ease; }
       #portfolio .img-wrap figcaption h5 {
         text-align: center; }
-      #portfolio .img-wrap figcaption h6 {
-        margin: 15px 0 0 0;
-        text-align: center; }
+      #portfolio .img-wrap figcaption a {
+        margin: 15px auto;
+        text-align: center;
+        display: block;
+        position: relative; }
 
 #wrap-bottom {
-  height: 1470px; }
+  height: 1445px; }
   #wrap-bottom #accents-bottom {
-    height: 1470px;
+    height: 100%;
     width: 100%;
     position: absolute;
     z-index: -3; }
@@ -210,9 +217,10 @@ html {
         #wrap-bottom #about #writeup #about-content p {
           text-align: left; }
   #wrap-bottom footer {
-    height: 630px; }
+    height: 605px; }
     #wrap-bottom footer h3 {
-      text-align: center; }
+      text-align: center;
+      display: block; }
     #wrap-bottom footer #contact {
       width: 450px;
       height: 186px;
@@ -272,14 +280,11 @@ html {
       float: right; }
 
 #accents-top #triangle-top {
-  padding-top: 27px;
-  padding-right: 24px;
   float: right; }
   #accents-top #triangle-top svg {
     width: 396px;
     height: 944px; }
 #accents-top #shape-purple-blue {
-  padding-left: 24px;
   margin-top: 391px;
   float: left;
   position: absolute; }
@@ -288,61 +293,56 @@ html {
     height: 1445px; }
 
 #accents-bottom #shape-blue-green {
-  padding-right: 24px;
   float: right; }
   #accents-bottom #shape-blue-green svg {
-    width: 1866px;
+    width: 1273.3px;
     height: 1445px; }
 #accents-bottom #triangle-green {
-  padding-left: 24px;
-  margin-top: 1236px;
+  margin-top: 1235px;
   position: absolute; }
   #accents-bottom #triangle-green svg {
     width: 523.7px;
     height: 210px; }
 
-#portfolio-wrap {
-  height: 4173px;
-  width: 1852px;
-  margin: 27px 24px 27px 24px; }
-  #portfolio-wrap #write-up {
-    width: 396px;
+#write-up {
+  width: 396px;
+  height: 100vh;
+  position: fixed; }
+  #write-up #copy-portfolio {
+    width: 362px;
     height: 1050px;
-    position: fixed; }
-    #portfolio-wrap #write-up #copy-portfolio {
-      width: 362px;
-      height: 1050px;
-      padding: 0;
-      margin: 0 auto; }
-      #portfolio-wrap #write-up #copy-portfolio h3 {
-        margin: 280px 0 0 0; }
-      #portfolio-wrap #write-up #copy-portfolio h6 {
-        margin: 95px 0 0 0; }
-      #portfolio-wrap #write-up #copy-portfolio p {
-        margin: 22px 0 0 0; }
-        #portfolio-wrap #write-up #copy-portfolio p:first-of-type {
-          margin-top: 0; }
-      #portfolio-wrap #write-up #copy-portfolio ul {
-        margin: 50px 0 0 0; }
-  #portfolio-wrap #photo-container {
+    padding: 0;
+    margin: 0 auto; }
+    #write-up #copy-portfolio h3 {
+      margin: 280px 0 0 0; }
+    #write-up #copy-portfolio h6 {
+      margin: 80px 0 0 0; }
+    #write-up #copy-portfolio p {
+      margin: 22px 0 0 0; }
+      #write-up #copy-portfolio p:first-of-type {
+        margin-top: 0; }
+    #write-up #copy-portfolio ul {
+      margin: 50px 0 0 0; }
+
+#photo-container {
+  width: 1432px;
+  height: 3600px;
+  float: right; }
+  #photo-container .photo-1column {
+    float: right;
     width: 1432px;
-    height: 3600px;
-    float: right; }
-    #portfolio-wrap #photo-container .photo-1column {
-      float: right;
-      width: 1432px;
-      height: 816px;
-      background-color: blue;
-      margin: 0 0 24px 0;
-      content: ""; }
-    #portfolio-wrap #photo-container .photo-2column {
-      float: left;
-      width: 704px;
-      height: 1026px;
-      margin: 0 0 24px 0;
-      background-color: #16b4ce; }
-      #portfolio-wrap #photo-container .photo-2column:nth-of-type(odd) {
-        margin: 0 24px 0 0; }
+    height: 816px;
+    background-color: blue;
+    margin: 0 0 24px 0;
+    content: ""; }
+  #photo-container .photo-2column {
+    float: left;
+    width: 704px;
+    height: 1026px;
+    margin: 0 0 24px 0;
+    background-color: #16b4ce; }
+    #photo-container .photo-2column:nth-of-type(odd) {
+      margin: 0 24px 0 0; }
 
 #accents-portfolio {
   z-index: -1;
@@ -353,7 +353,7 @@ html {
       width: 396px;
       height: 396.5px; }
   #accents-portfolio #shape-bottom {
-    margin: 772.6px 0 0 0;
+    margin: 67vh 0 0 0;
     position: absolute; }
     #accents-portfolio #shape-bottom svg {
       width: 396px;
@@ -369,6 +369,9 @@ html {
 .delay {
   animation-delay: 0.5s; }
 
+.delay-medium {
+  animation-delay: 1s; }
+
 /* animated */
 .animated {
   -webkit-animation-duration: 1s;
@@ -379,6 +382,15 @@ html {
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
+
+.pageAnimation {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.isExiting {
+  animation-direction: reverse; }
 
 @keyframes bounce {
   0%, 20%, 53%, 80%, 100% {
@@ -439,11 +451,24 @@ html {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0); }
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0); }
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -451,6 +476,32 @@ html {
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
 
 /*# sourceMappingURL=main.css.map */
 
@@ -573,10 +624,13 @@ figcaption h5 {
   font-size: 22px;
   letter-spacing: 2px;
   color: #fff; }
-figcaption h6 {
+figcaption a {
   font-size: 14px;
   letter-spacing: 2px;
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
+  figcaption a:hover {
+    text-decoration: underline; }
 
 li {
   font-size: 18px;
